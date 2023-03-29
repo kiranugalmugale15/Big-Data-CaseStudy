@@ -9,7 +9,7 @@ bash -x Desktop/cronJob/schedule_analysis_script.sh
 
 
 # Step 1:
-i have created <b>"Generate_Ecommerce_JsonData_Proj"</b> java maven project
+i have created <b>["Generate_Ecommerce_JsonData_Proj"]([https://www.quora.com](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj))</b> java maven project
 
 it is generating data using <b>"GeneratorEcommerceData"</b> class ( located at - <b>"/Generate_Ecommerce_JsonData_Proj/src/main/java/GeneratorEcommerceData.java"</b> ) 
 which is using 
