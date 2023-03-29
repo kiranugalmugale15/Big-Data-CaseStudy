@@ -13,7 +13,7 @@ i have created [<b>"Generate_Ecommerce_JsonData_Proj"</b>](https://github.com/ki
 
 it is generating data using [<b>"GeneratorEcommerceData"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/Generate_Ecommerce_JsonData_Proj/src/main/java/GeneratorEcommerceData.java) class 
 
-which is using 
+which is using external jar dependancy added in [<b>"pom.xml"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/Generate_Ecommerce_JsonData_Proj/pom.xml)
 1. <b>"Javafaker"</b> class to generate random names,address,city,app name for me
 2. <b>"Gson"</b> for converting my ecommerce object data into json
 
