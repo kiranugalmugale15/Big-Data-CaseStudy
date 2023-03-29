@@ -23,8 +23,8 @@ also i have created jar [<b>"TestProject-0.0.1-SNAPSHOT-jar-with-dependencies.ja
 i have created [<b>"UserCount_MapReduce_Proj"</b>]([https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/UserCount_MapReduce_Proj)) simple java project
 
 which has three class 
-1. ["RecordCountDriver.java"](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountDriver.java)
-2. ["RecordCountMapper.java"](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountMapper.java)
-3. ["RecordCountReducer.java"](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountReducer.java)
+1. [<b>"RecordCountDriver.java"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountDriver.java) Responsible for running mapreduce program
+2. [<b>"RecordCountMapper.java"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountMapper.java) Mapping Each Record in key value pair
+3. [<b>"RecordCountReducer.java"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountReducer.java) Reducing records by adding values
 
 also i have created jar [<b>"activeUserCountMR.jar"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/UserCount_MapReduce_Proj)
