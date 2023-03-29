@@ -112,7 +112,7 @@ which is using external jar dependancy added in [<b>"pom.xml"</b>](https://githu
 
 also i have created jar [<b>"TestProject-0.0.1-SNAPSHOT-jar-with-dependencies.jar"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj/target)
 
-
+</br></br></br>
 # Step 2: Create Map-Reduce Java Program To Count No. Of User
 i have created [<b>"UserCount_MapReduce_Proj"</b>]([https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/UserCount_MapReduce_Proj)) simple java project
 
@@ -123,10 +123,12 @@ which has three class
 
 also i have created jar [<b>"activeUserCountMR.jar"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/UserCount_MapReduce_Proj)
 
+</br></br></br>
 # Step 3: Doing Analysis On Input JSON File Using Zeppelin
 1. [<b>"HiveAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/HiveAnalysisZeppelin.zpln) Responsible For Hive Analysis
 2. [<b>"SparkAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/SparkAnalysisZeppelin.zpln) For Spark Analysis
 
+</br></br></br>
 # Step 4: Create CronJob If You Want To do Run all this Step Automatically
 please have look at [<b>"schedule_analysis_script.sh"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/edit/main/CronJob%20Script/schedule_analysis_script.sh)
 
