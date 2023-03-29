@@ -100,7 +100,7 @@ For e.g.
 
 Required Setup
 Install Java, Hadoop and Integrated with Hive, Spark and Zeppelin (Visualization Tool Same As Jupiter Notebook) 
-
+<br>
 # Step 1: Create Java Program To Generate JSON Data
 i have created [<b>"Generate_Ecommerce_JsonData_Proj"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj) java maven project
 
@@ -111,10 +111,6 @@ which is using external jar dependancy added in [<b>"pom.xml"</b>](https://githu
 2. <b>"Gson"</b> for converting my ecommerce object data into json
 
 also i have created jar [<b>"TestProject-0.0.1-SNAPSHOT-jar-with-dependencies.jar"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj/target)
-
-
-
-
 
 
 # Step 2: Create Map-Reduce Java Program To Count No. Of User
