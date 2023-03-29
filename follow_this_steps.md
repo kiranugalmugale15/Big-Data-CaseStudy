@@ -8,7 +8,7 @@ bash -x Desktop/cronJob/stopZeppelinDemo/stopZeppelinDemo.sh
 bash -x Desktop/cronJob/schedule_analysis_script.sh 
 
 
-# Step 1:
+# Step 1: Create Java Program To Generate JSON Data
 i have created [<b>"Generate_Ecommerce_JsonData_Proj"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj) java maven project
 
 it is generating data using [<b>"GeneratorEcommerceData"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/Generate_Ecommerce_JsonData_Proj/src/main/java/GeneratorEcommerceData.java) class 
