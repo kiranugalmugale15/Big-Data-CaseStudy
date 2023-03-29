@@ -1,0 +1,676 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%hive\nset hive.mapred.mode=nonstrict;\nset hive.exec.dynamic.partition=true;\nset hive.exec.dynamic.partition.mode=nonstrict;\nadd jar /home/kiran/apache-hive-3.1.2-bin/lib/hive-hcatalog-core-3.1.2.jar;\n\nselect payment_method,count(*) as no_of_transaction from ecommerce_click_data_partitioned Where payment_method <>'__HIVE_DEFAULT_PARTITION__' GROUP BY payment_method ",
+      "user": "anonymous",
+      "dateUpdated": "2023-01-20T11:43:32+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "col_name": "string",
+                      "data_type": "string",
+                      "comment": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "_c0": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "4": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {
+                    "columns": [
+                      {
+                        "name": "payment_method0",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      },
+                      {
+                        "name": "no_of_transaction1",
+                        "visible": true,
+                        "width": "*",
+                        "sort": {},
+                        "filters": [
+                          {}
+                        ],
+                        "pinned": ""
+                      }
+                    ],
+                    "scrollFocus": {},
+                    "selection": [],
+                    "grouping": {
+                      "grouping": [],
+                      "aggregations": [],
+                      "rowExpandedStates": {}
+                    },
+                    "treeView": {},
+                    "pagination": {
+                      "paginationCurrentPage": 1,
+                      "paginationPageSize": 250
+                    }
+                  },
+                  "tableColumnTypeState": {
+                    "updated": true,
+                    "names": {
+                      "payment_method": "string",
+                      "no_of_transaction": "string"
+                    }
+                  },
+                  "updated": false,
+                  "initialized": false,
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  }
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "payment_method",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "no_of_transaction",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "5": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "payment_method": "string",
+                      "no_of_transaction": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "payment_method",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "no_of_transaction",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "6": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "payment_method": "string",
+                      "no_of_transaction": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\nINFO  : Compiling command(queryId=kiran_20230120114339_cdf4c620-22d5-4da3-a998-7dbbab15fcf7): \n\n\n\n\n\nselect payment_method,count(*) as no_of_transaction from ecommerce_click_data_partitioned Where payment_method <>'__HIVE_DEFAULT_PARTITION__' GROUP BY payment_method \nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial = false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:payment_method, type:string, comment:null), FieldSchema(name:no_of_transaction, type:bigint, comment:null)], properties:null)\nINFO  : Completed compiling command(queryId=kiran_20230120114339_cdf4c620-22d5-4da3-a998-7dbbab15fcf7); Time taken: 6.737 seconds\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "payment_method\tno_of_transaction\ncash\t13\ncredit card\t10\ndebit card\t14\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673430298670_364806701",
+      "id": "paragraph_1673430298670_364806701",
+      "dateCreated": "2023-01-11T15:14:58+0530",
+      "dateStarted": "2023-01-20T11:43:32+0530",
+      "dateFinished": "2023-01-20T11:44:29+0530",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:591"
+    },
+    {
+      "text": "%hive\nset hive.mapred.mode=nonstrict;\nset hive.exec.dynamic.partition=true;\nset hive.exec.dynamic.partition.mode=nonstrict;\nadd jar /home/kiran/apache-hive-3.1.2-bin/lib/hive-hcatalog-core-3.1.2.jar;\n\nselect item, count(item) as no_of_orders from ecommerce_click_data_partitioned group by item ORDER BY no_of_orders desc limit 3",
+      "user": "anonymous",
+      "dateUpdated": "2023-01-20T11:44:29+0530",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "col_name": "string",
+                      "data_type": "string",
+                      "comment": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "4": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "item": "string",
+                      "no_of_orders": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "item",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "no_of_orders",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          },
+          "5": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "item": "string",
+                      "countitm": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "item",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "countitm",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\n\n"
+          },
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\nINFO  : Compiling command(queryId=kiran_20230120114429_22dece7b-5c13-45ce-a17a-3a7daa7100fe): \n\n\n\n\n\nselect item, count(item) as no_of_orders from ecommerce_click_data_partitioned group by item ORDER BY no_of_orders desc limit 3\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial = false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:item, type:string, comment:null), FieldSchema(name:no_of_orders, type:bigint, comment:null)], properties:null)\nINFO  : Completed compiling command(queryId=kiran_20230120114429_22dece7b-5c13-45ce-a17a-3a7daa7100fe); Time taken: 0.755 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId=kiran_20230120114429_22dece7b-5c13-45ce-a17a-3a7daa7100fe): \n\n\n\n\n\nselect item, count(item) as no_of_orders from ecommerce_click_data_partitioned group by item ORDER BY no_of_orders desc limit 3\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID = kiran_20230120114429_22dece7b-5c13-45ce-a17a-3a7daa7100fe\nINFO  : Total jobs = 2\nINFO  : Launching Job 1 out of 2\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer=<number>\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max=<number>\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces=<number>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "item\tno_of_orders\nSubin\t11\nAsoka\t11\nTres-Zap\t9\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673850458421_930470009",
+      "id": "paragraph_1673850458421_930470009",
+      "dateCreated": "2023-01-16T11:57:38+0530",
+      "dateStarted": "2023-01-20T11:44:29+0530",
+      "dateFinished": "2023-01-20T11:45:41+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:592"
+    },
+    {
+      "text": "%hive\n\nadd jar /home/kiran/apache-hive-3.1.2-bin/lib/hive-hcatalog-core-3.1.2.jar;\nselect action,count(*) as no_of_transaction from ecommerce_click_data_partitioned GROUP BY action; ",
+      "user": "anonymous",
+      "dateUpdated": "2023-01-20T11:45:41+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "col_name": "string",
+                      "data_type": "string",
+                      "comment": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          },
+          "1": {
+            "graph": {
+              "mode": "lineChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "action": "string",
+                      "no_of_transaction": "string"
+                    },
+                    "updated": true
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "action",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "no_of_transaction",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Query executed successfully. Affected rows : -1\nINFO  : Compiling command(queryId=kiran_20230120114542_672afe83-7b55-4d97-8d45-84eece6407c5): \n\n\nselect action,count(*) as no_of_transaction from ecommerce_click_data_partitioned GROUP BY action\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Semantic Analysis Completed (retrial = false)\nINFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:action, type:string, comment:null), FieldSchema(name:no_of_transaction, type:bigint, comment:null)], properties:null)\nINFO  : Completed compiling command(queryId=kiran_20230120114542_672afe83-7b55-4d97-8d45-84eece6407c5); Time taken: 0.626 seconds\nINFO  : Concurrency mode is disabled, not creating a lock manager\nINFO  : Executing command(queryId=kiran_20230120114542_672afe83-7b55-4d97-8d45-84eece6407c5): \n\n\nselect action,count(*) as no_of_transaction from ecommerce_click_data_partitioned GROUP BY action\nWARN  : Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.\nINFO  : Query ID = kiran_20230120114542_672afe83-7b55-4d97-8d45-84eece6407c5\nINFO  : Total jobs = 1\nINFO  : Launching Job 1 out of 1\nINFO  : Starting task [Stage-1:MAPRED] in serial mode\nINFO  : Number of reduce tasks not specified. Estimated from input data size: 1\nINFO  : In order to change the average load for a reducer (in bytes):\nINFO  :   set hive.exec.reducers.bytes.per.reducer=<number>\nINFO  : In order to limit the maximum number of reducers:\nINFO  :   set hive.exec.reducers.max=<number>\nINFO  : In order to set a constant number of reducers:\nINFO  :   set mapreduce.job.reduces=<number>\n"
+          },
+          {
+            "type": "TABLE",
+            "data": "action\tno_of_transaction\naddToCart\t43\ndelete\t43\nplaceOrder\t91\nreplace\t58\nreturn\t46\nview\t56\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673881551520_427092428",
+      "id": "paragraph_1673881551520_427092428",
+      "dateCreated": "2023-01-16T20:35:51+0530",
+      "dateStarted": "2023-01-20T11:45:41+0530",
+      "dateFinished": "2023-01-20T11:46:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:593"
+    },
+    {
+      "text": "\n",
+      "user": "anonymous",
+      "dateUpdated": "2023-01-20T11:46:19+0530",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1673888837199_1568729718",
+      "id": "paragraph_1673888837199_1568729718",
+      "dateCreated": "2023-01-16T22:37:17+0530",
+      "dateStarted": "2023-01-20T11:46:19+0530",
+      "dateFinished": "2023-01-20T11:46:19+0530",
+      "status": "FINISHED",
+      "$$hashKey": "object:594"
+    }
+  ],
+  "name": "analysis1",
+  "id": "2HRW8Q7VS",
+  "defaultInterpreterGroup": "hive",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {
+    "isRunning": false
+  },
+  "path": "/analysis1"
+}
