@@ -100,7 +100,7 @@ For e.g.
 
 Required Setup
 Install Java, Hadoop and Integrated with Hive, Spark and Zeppelin (Visualization Tool Same As Jupiter Notebook) 
-<br>
+</br></br></br></br>
 # Step 1: Create Java Program To Generate JSON Data
 i have created [<b>"Generate_Ecommerce_JsonData_Proj"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj) java maven project
 
