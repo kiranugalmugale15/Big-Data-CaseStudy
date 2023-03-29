@@ -1,12 +1,5 @@
-## to run zeppelin demo services
-bash -x Desktop/cronJob/startZeppelinDemo/startZeppelinDemo.sh
-
-## to stop zeppelin demo services
-bash -x Desktop/cronJob/stopZeppelinDemo/stopZeppelinDemo.sh
-
-## to run cronJob Shell script
-bash -x Desktop/cronJob/schedule_analysis_script.sh 
-
+Required Setup
+Install Java, Hadoop and Integrated with Hive, Spark and Zeppelin (Visualization Tool Same As Jupiter Notebook) 
 
 # Step 1: Create Java Program To Generate JSON Data
 i have created [<b>"Generate_Ecommerce_JsonData_Proj"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/Generate_Ecommerce_JsonData_Proj) java maven project
@@ -28,3 +21,11 @@ which has three class
 3. [<b>"RecordCountReducer.java"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/UserCount_MapReduce_Proj/RecordCountReducer.java) Counting All Records
 
 also i have created jar [<b>"activeUserCountMR.jar"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/tree/main/UserCount_MapReduce_Proj)
+
+# Step 3: Doing Analysis On Input JSON File Using Zeppelin
+1. [<b>"HiveAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/HiveAnalysisZeppelin.zpln) Responsible For Hive Analysis
+2. [<b>"SparkAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/SparkAnalysisZeppelin.zpln) For Spark Analysis
+
+# Step 3: Create CronJob If You Want To do Run all this Step Automatically
+please have look at [<b>"schedule_analysis_script.sh"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/edit/main/CronJob%20Script/schedule_analysis_script.sh)
+
