@@ -11,9 +11,9 @@ bash -x Desktop/cronJob/schedule_analysis_script.sh
 # Step 1:
 i have created <b>"Generate_Ecommerce_JsonData_Proj"</b> java maven project
 
-it is generating data using "GeneratorEcommerceData" class ( located at - "/Generate_Ecommerce_JsonData_Proj/src/main/java/GeneratorEcommerceData.java" ) 
+it is generating data using <b>"GeneratorEcommerceData"</b> class ( located at - <b>"/Generate_Ecommerce_JsonData_Proj/src/main/java/GeneratorEcommerceData.java"</b> ) 
 which is using 
-1. "Javafaker" class to generate random names,address,city,app name for me
-2. "Gson" for converting my ecommerce object data into json
+1. <b>"Javafaker"</b> class to generate random names,address,city,app name for me
+2. <b>"Gson"</b> for converting my ecommerce object data into json
 
-also i have created jar which is located at "/Generate_Ecommerce_JsonData_Proj/target/"
+also i have created jar which is located at <b>"/Generate_Ecommerce_JsonData_Proj/target/"</b>
