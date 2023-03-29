@@ -77,7 +77,7 @@ Possible actions : view , addtocart , removefromcart , purchase etc location –
 · sessionId – Session id of user
 
 For e.g.
-
+```json
 {
 
 "userID":"Marvin Eriksen Sr.",
@@ -95,3 +95,4 @@ For e.g.
 "logDate":"2020-08-11"
 
 } 
+```
