@@ -1,0 +1,3 @@
+paymethods=credit card,debit card,cash
+actionurl=view,addToCart,delete,placeOrder,return,replace
+domain=www.softwaremart.in/
