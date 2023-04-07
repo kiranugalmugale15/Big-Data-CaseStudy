@@ -125,7 +125,7 @@ also i have created jar [<b>"activeUserCountMR.jar"</b>](https://github.com/kira
 
 </br></br></br>
 # Step 3: Doing Analysis On Input JSON File Using Zeppelin
-1. [<b>"HiveAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/HiveAnalysisZeppelin.zpln) Responsible For Hive Analysis
+1. [<b>"HiveAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/HiveAnalysisZeppelin.zpln)  For Hive Analysis
 2. [<b>"SparkAnalysisZeppelin.zpln"</b>](https://github.com/kiranugalmugale15/Big-Data-CaseStudy/blob/main/ZeppelinNotBooks/SparkAnalysisZeppelin.zpln) For Spark Analysis
 
 </br></br></br>
